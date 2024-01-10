@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Views - Web-Labs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Web-Labs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lab 2 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../models/" class="dropdown-item">Models</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Views</a>
+</li>
+                                    
+<li>
+    <a href="../urls/" class="dropdown-item">Urls</a>
+</li>
+                                    
+<li>
+    <a href="../forms/" class="dropdown-item">Forms</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lab 3 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Lab3/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab3/models/" class="dropdown-item">Models</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab3/serializers/" class="dropdown-item">Serializers</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab3/views/" class="dropdown-item">Views</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lab 4 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Lab4/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/mainjs/" class="dropdown-item">Main.js</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/login/" class="dropdown-item">Login</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/register/" class="dropdown-item">Register</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/profile/" class="dropdown-item">Profile</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/navbar/" class="dropdown-item">Navbar</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/home/" class="dropdown-item">Home</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/brokers/" class="dropdown-item">Brokers</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/producers/" class="dropdown-item">Producers</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/products/" class="dropdown-item">Products</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/consignments/" class="dropdown-item">Consignments</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../models/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../urls/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#viewspy" class="nav-link">views.py</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#register-user" class="nav-link">Register User</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#user-login" class="nav-link">User Login</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#user-logout" class="nav-link">User Logout</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hotel-list" class="nav-link">Hotel List</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hotel-detail" class="nav-link">Hotel Detail</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#reserve-room" class="nav-link">Reserve Room</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#reservations-for-user" class="nav-link">Reservations for User</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#reservation-update" class="nav-link">Reservation Update</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#reservation-delete" class="nav-link">Reservation Delete</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#now-review-the-urlspy" class="nav-link">Now review the urls.py</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="viewspy">views.py</h1>
+<h2 id="register-user">Register User</h2>
+<pre><code class="language-python">def register(request):
+    if request.method == &quot;POST&quot;:
+        user_form = RegistrationForm(request.POST)
+        if user_form.is_valid():
+            user = user_form.save()
+            user.set_password(user.password)
+            user.save()
+            return redirect(&quot;user_login&quot;)
+    else:
+        user_form = RegistrationForm()
+
+    return render(request, &quot;register.html&quot;, {&quot;user_form&quot;: user_form})
+</code></pre>
+<ul>
+<li><strong>Description</strong>: Handles user registration. Validates the registration form, saves the user, and redirects to the login page upon successful registration.</li>
+</ul>
+<h2 id="user-login">User Login</h2>
+<pre><code class="language-python">def user_login(request):
+    if request.method == &quot;POST&quot;:
+        user_form = LoginForm(request.POST)
+
+        username = user_form.data.get(&quot;username&quot;)
+        password = user_form.data.get(&quot;password&quot;)
+        user = authenticate(username=username, password=password)
+
+        if user is None:
+            return redirect(&quot;user_login&quot;)
+
+        login(request, user)
+        return redirect(&quot;hotel_list&quot;)
+    else:
+        user_form = LoginForm()
+
+    return render(request, &quot;login.html&quot;, {&quot;user_form&quot;: user_form})
+</code></pre>
+<ul>
+<li><strong>Description</strong>: Manages user login. Authenticates the user, logs them in, and redirects to the hotel list upon successful login.</li>
+</ul>
+<h2 id="user-logout">User Logout</h2>
+<pre><code class="language-python">def user_logout(request):
+    logout(request)
+    return redirect(&quot;user_login&quot;)
+</code></pre>
+<ul>
+<li><strong>Description</strong>: Logs the user out and redirects to the login page.</li>
+</ul>
+<h2 id="hotel-list">Hotel List</h2>
+<pre><code class="language-python">def hotel_list(request):
+    if request.method != &quot;GET&quot;:
+        return Http404(f&quot;Method {request.method} not supported&quot;)
+
+    capacity = request.GET.get(&quot;capacity&quot;, None)
+    city = request.GET.get('city', None)
+
+    available_capacities = TypeOfRoom.objects.values_list('capacity', flat=True)
+    available_cities = City.objects.values_list('name', flat=True)
+
+    hotels = Hotel.objects.all()
+
+    if capacity is not None:
+        hotels = hotels.filter(rooms__type__capacity__gte=capacity)
+
+    if city is not None:
+        hotels = hotels.filter(city__name=city)
+
+    return render(
+        request,
+        &quot;list.html&quot;,
+        {
+            &quot;capacity&quot;: capacity,
+            &quot;city&quot;: city,
+            &quot;available_capacities&quot;: available_capacities,
+            &quot;available_cities&quot;: available_cities,
+            &quot;hotels&quot;: hotels
+        },
+    )
+</code></pre>
+<ul>
+<li><strong>Description</strong>: Retrieves and displays a list of hotels based on optional filter criteria such as capacity and city.</li>
+</ul>
+<h2 id="hotel-detail">Hotel Detail</h2>
+<pre><code class="language-python">def hotel_detail(request, hotel_id):
+    hotel = get_object_or_404(Hotel, pk=hotel_id)
+
+    if request.method == &quot;POST&quot;:
+        comment_form = CommentForm(request.POST)
+        if comment_form.is_valid():
+            if Reservation.objects.filter(passenger=request.user, room__hotel=hotel_id).exists():
+                comment = comment_form.save(commit=False)
+                comment.hotel = Hotel.objects.get(id=hotel_id)
+                comment.author = request.user
+                comment.save()
+        return redirect(&quot;hotel_detail&quot;, hotel_id)
+
+    else:
+        rooms_set = Room.objects.filter(hotel__id=hotel_id).order_by(&quot;number&quot;)
+        rooms = []
+
+        for room in rooms_set:
+            if not (Reservation.objects.filter(room=room, date_start__lte=datetime.date.today(),
+                                               date_finish__gte=datetime.date.today()).exists()):
+                rooms.append(
+                    {
+                       &quot;name&quot;: f&quot;{room.number}&quot;,
+                       &quot;capacity&quot;: f&quot;{room.type.capacity}&quot;,
+                       &quot;conveniences&quot;: f&quot;{room.type.conveniences}&quot;,
+                       &quot;cost&quot;: f&quot;{room.type.cost}&quot;
+                   }
+                )
+
+        comments = Comment.objects.filter(hotel=hotel)
+        comment_form = CommentForm()
+
+        return render(
+           request,
+           &quot;detail.html&quot;,
+           {
+               &quot;hotel&quot;: hotel,
+               &quot;comments&quot;: comments,
+               &quot;comments_exists&quot;: bool(comments.count()),
+               &quot;rooms&quot;: rooms,
+               &quot;user&quot;: request.user,
+               &quot;comment_form&quot;: comment_form
+           },
+       )
+</code></pre>
+<ul>
+<li><strong>Description</strong>: Displays detailed information about a specific hotel, including available rooms, comments, and handles adding comments and making reservations.</li>
+</ul>
+<h2 id="reserve-room">Reserve Room</h2>
+<pre><code class="language-python">@login_required(login_url='/login/')
+def reserve_room(request, hotel_id):
+    hotel = Hotel.objects.get(id=hotel_id)
+    if request.method == &quot;POST&quot;:
+        room = Room.objects.filter(number=request.POST['room']).first()
+        try:
+            date_start = datetime.datetime.strptime(request.POST[&quot;date-start&quot;], &quot;%d.%m.%Y&quot;)
+            date_finish = datetime.datetime.strptime(request.POST[&quot;date-finish&quot;], &quot;%d.%m.%Y&quot;)
+
+            form = ReservationForm({&quot;room&quot;: room, &quot;date_start&quot;: date_start, &quot;date_finish&quot;: date_finish})
+
+            if not form.is_valid():
+                return redirect(&quot;hotel_detail&quot;, hotel_id)
+
+            reservation = form.save(commit=False)
+            reservation.passenger = request.user
+            reservation.room = room
+            reservation.save()
+
+        except Exception:
+            return redirect(&quot;hotel_detail&quot;, hotel_id)
+
+        return redirect(&quot;hotel_detail&quot;, hotel_id)
+
+    else:
+        return render(request, &quot;reserve_room.html&quot;, {'form' : ReservationForm(), &quot;hotel&quot;: hotel})
+</code></pre>
+<ul>
+<li><strong>Description</strong>: Allows authenticated users to reserve a room in a hotel.</li>
+</ul>
+<h2 id="reservations-for-user">Reservations for User</h2>
+<pre><code class="language-python">@login_required(login_url='/login/')
+def reservations_for_user(request):
+    reservations = Reservation.objects.filter(passenger=request.user)
+    return render(request, &quot;reservation_for_user.html&quot;, {&quot;reservations&quot;: reservations})
+</code></pre>
+<ul>
+<li><strong>Description</strong>: Displays a list of reservations for the logged-in user.</li>
+</ul>
+<h2 id="reservation-update">Reservation Update</h2>
+<pre><code class="language-python">def reservation_update(request, reservation_id):
+    reservation = get_object_or_404(Reservation, id=reservation_id)
+
+    if request.method == &quot;POST&quot;:
+        form = ReservationForm(data=request.POST, instance=reservation)
+        if not form.is_valid():
+            return redirect(&quot;reservation_update&quot;, reservation_id)
+
+        form.save()
+        return redirect(&quot;hotel_detail&quot;, reservation.room.hotel.id)
+    else:
+        form = ReservationForm(instance=reservation)
+        return render(
+            request,
+            &quot;reservation_update.html&quot;,
+            {&quot;form&quot;: form, &quot;reservation&quot;: reservation},
+        )
+</code></pre>
+<ul>
+<li><strong>Description</strong>: Handles updating an existing reservation.</li>
+</ul>
+<h2 id="reservation-delete">Reservation Delete</h2>
+<pre><code class="language-python">@login_required(login_url='/login/')
+def reservation_delete(request, reservation_id):
+    reservation = get_object_or_404(Reservation, id=reservation_id, passenger=request.user)
+
+    if request.method == &quot;POST&quot;:
+        reservation.delete()
+        return redirect(&quot;hotel_detail&quot;, reservation.room.hotel.id)
+    else:
+        return render(
+            request,
+            &quot;reservation_delete.html&quot;,
+            {&quot;reservation&quot;: reservation},
+        )
+</code></pre>
+<ul>
+<li><strong>Description</strong>: Handles deleting an existing reservation for the logged-in user.</li>
+</ul>
+<h2 id="now-review-the-urlspy">Now review the <a href="../urls/">urls.py</a></h2></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

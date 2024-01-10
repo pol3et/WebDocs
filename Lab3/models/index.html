@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Models - Web-Labs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Web-Labs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lab 2 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Lab2/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab2/models/" class="dropdown-item">Models</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab2/views/" class="dropdown-item">Views</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab2/urls/" class="dropdown-item">Urls</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab2/forms/" class="dropdown-item">Forms</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lab 3 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Models</a>
+</li>
+                                    
+<li>
+    <a href="../serializers/" class="dropdown-item">Serializers</a>
+</li>
+                                    
+<li>
+    <a href="../views/" class="dropdown-item">Views</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lab 4 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Lab4/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/mainjs/" class="dropdown-item">Main.js</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/login/" class="dropdown-item">Login</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/register/" class="dropdown-item">Register</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/profile/" class="dropdown-item">Profile</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/navbar/" class="dropdown-item">Navbar</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/home/" class="dropdown-item">Home</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/brokers/" class="dropdown-item">Brokers</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/producers/" class="dropdown-item">Producers</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/products/" class="dropdown-item">Products</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab4/consignments/" class="dropdown-item">Consignments</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../overview/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../serializers/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#modelspy" class="nav-link">models.py</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#company-model" class="nav-link">Company Model</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#product-model" class="nav-link">Product Model</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#brokercompany-model" class="nav-link">BrokerCompany Model</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#broker-model" class="nav-link">Broker Model</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#consignment-model" class="nav-link">Consignment Model</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#productbycompany-model" class="nav-link">ProductByCompany Model</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#serializers-next" class="nav-link">Serializers next</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="modelspy">models.py</h1>
+<h2 id="company-model">Company Model</h2>
+<pre><code class="language-python">class Company(models.Model):
+    name = models.CharField(max_length=300)
+</code></pre>
+<ul>
+<li><strong>Description</strong>: Represents a company with a name attribute.</li>
+</ul>
+<h2 id="product-model">Product Model</h2>
+<pre><code class="language-python">class Product(models.Model):
+    code = models.CharField(max_length=100, unique=True)
+    name = models.CharField(max_length=300)
+    unit = models.CharField(max_length=100)
+    shelf_life = models.IntegerField()
+
+    def __str__(self):
+        return self.name
+</code></pre>
+<ul>
+<li><strong>Description</strong>: Represents a product with attributes such as code, name, unit, and shelf life. The <code>__str__</code> method returns the name of the product.</li>
+</ul>
+<h2 id="brokercompany-model">BrokerCompany Model</h2>
+<pre><code class="language-python">class BrokerCompany(models.Model):
+    name = models.CharField(max_length=100)
+    income = models.FloatField(default=0)
+
+    def __str__(self):
+        return self.name
+</code></pre>
+<ul>
+<li><strong>Description</strong>: Represents a broker company with attributes including name and income. The <code>__str__</code> method returns the name of the broker company.</li>
+</ul>
+<h2 id="broker-model">Broker Model</h2>
+<pre><code class="language-python">class Broker(models.Model):
+    name = models.CharField(max_length=100)
+    company = models.ForeignKey(BrokerCompany, related_name='brokers', on_delete=models.CASCADE)
+    income = models.FloatField(default=0)
+
+    def __str__(self):
+        return self.name
+</code></pre>
+<ul>
+<li><strong>Description</strong>: Represents a broker with attributes including name, associated company (linked to <code>BrokerCompany</code> model), and income. The <code>__str__</code> method returns the name of the broker.</li>
+</ul>
+<h2 id="consignment-model">Consignment Model</h2>
+<pre><code class="language-python">class Consignment(models.Model):
+    broker = models.ForeignKey(Broker, related_name='what_sold', on_delete=models.CASCADE)
+
+    date_sold = models.DateField()
+    num = models.CharField(max_length=20)
+    cost = models.FloatField()
+    prepayment = models.BooleanField()
+</code></pre>
+<ul>
+<li><strong>Description</strong>: Represents a consignment with attributes including associated broker (linked to <code>Broker</code> model), date sold, consignment number, cost, and prepayment status.</li>
+</ul>
+<h2 id="productbycompany-model">ProductByCompany Model</h2>
+<pre><code class="language-python">class ProductByCompany(models.Model):
+    company = models.ForeignKey(Company, related_name='what_produced', on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, related_name='produced_by', on_delete=models.CASCADE)
+    consignment = models.ForeignKey(Consignment, related_name='what_in', on_delete=models.CASCADE)
+    created = models.DateField()
+
+    def __str__(self):
+        return f&quot;{self.product.name} by {self.company.name}&quot;
+</code></pre>
+<ul>
+<li><strong>Description</strong>: Represents the relationship between a company, a product, and a consignment. The <code>__str__</code> method returns a string representation of the product produced by the company.</li>
+</ul>
+<h2 id="serializers-next"><a href="../serializers/">Serializers</a> next</h2></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
