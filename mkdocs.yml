@@ -1,0 +1,27 @@
+site_name: Web-Labs
+
+nav:
+  - Home: index.md
+  - Lab 2:
+      - Overview: Lab2/overview.md
+      - Models: Lab2/models.md
+      - Views: Lab2/views.md
+      - Urls: Lab2/urls.md
+      - Forms: Lab2/forms.md
+  - Lab 3:
+      - Overview: Lab3/overview.md
+      - Models: Lab3/models.md
+      - Serializers: Lab3/serializers.md
+      - Views: Lab3/views.md
+  - Lab 4:
+      - Overview: Lab4/overview.md
+      - Main.js: Lab4/mainjs.md
+      - Login: Lab4/login.md
+      - Register: Lab4/register.md
+      - Profile: Lab4/profile.md
+      - Navbar: Lab4/navbar.md
+      - Home: Lab4/home.md
+      - Brokers: Lab4/brokers.md
+      - Producers: Lab4/producers.md
+      - Products: Lab4/products.md
+      - Consignments: Lab4/consignments.md
