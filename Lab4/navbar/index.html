@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Navbar - Web-Labs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Web-Labs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lab 2 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Lab2/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab2/models/" class="dropdown-item">Models</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab2/views/" class="dropdown-item">Views</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab2/urls/" class="dropdown-item">Urls</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab2/forms/" class="dropdown-item">Forms</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lab 3 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Lab3/overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab3/models/" class="dropdown-item">Models</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab3/serializers/" class="dropdown-item">Serializers</a>
+</li>
+                                    
+<li>
+    <a href="../../Lab3/views/" class="dropdown-item">Views</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Lab 4 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../mainjs/" class="dropdown-item">Main.js</a>
+</li>
+                                    
+<li>
+    <a href="../login/" class="dropdown-item">Login</a>
+</li>
+                                    
+<li>
+    <a href="../register/" class="dropdown-item">Register</a>
+</li>
+                                    
+<li>
+    <a href="../profile/" class="dropdown-item">Profile</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Navbar</a>
+</li>
+                                    
+<li>
+    <a href="../home/" class="dropdown-item">Home</a>
+</li>
+                                    
+<li>
+    <a href="../brokers/" class="dropdown-item">Brokers</a>
+</li>
+                                    
+<li>
+    <a href="../producers/" class="dropdown-item">Producers</a>
+</li>
+                                    
+<li>
+    <a href="../products/" class="dropdown-item">Products</a>
+</li>
+                                    
+<li>
+    <a href="../consignments/" class="dropdown-item">Consignments</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../profile/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../home/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#navbarvue" class="nav-link">Navbar.vue</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#navbar-component" class="nav-link">Navbar Component</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#navbar-component-script" class="nav-link">Navbar Component Script</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#navbar-component-styles" class="nav-link">Navbar Component Styles</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#homevue-is-up-next" class="nav-link">Home.vue is up next!</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="navbarvue">Navbar.vue</h1>
+<h2 id="navbar-component">Navbar Component</h2>
+<pre><code class="language-html">&lt;template&gt;
+  &lt;header&gt;
+    &lt;h1 class=&quot;logo&quot;&gt;Stock&amp;Lock&lt;/h1&gt;
+    &lt;nav&gt;
+      &lt;router-link to=&quot;/&quot; class=&quot;nav-link&quot; :class=&quot;{ 'active': $route.path === '/' }&quot;&gt;Home&lt;/router-link&gt;
+      &lt;router-link v-if=&quot;!isAuthPage()&quot; to=&quot;/brokers&quot; class=&quot;nav-link&quot; :class=&quot;{ 'active': $route.path === '/brokers' }&quot;&gt;Brokers&lt;/router-link&gt;
+      &lt;router-link v-if=&quot;!isAuthPage()&quot; to=&quot;/producers&quot; class=&quot;nav-link&quot; :class=&quot;{ 'active': $route.path === '/producers' }&quot;&gt;Producers&lt;/router-link&gt;
+      &lt;router-link v-if=&quot;!isAuthPage()&quot; to=&quot;/products&quot; class=&quot;nav-link&quot; :class=&quot;{ 'active': $route.path === '/products' }&quot;&gt;Products&lt;/router-link&gt;
+      &lt;router-link v-if=&quot;!isAuthPage()&quot; to=&quot;/cosignments&quot; class=&quot;nav-link&quot; :class=&quot;{ 'active': $route.path === '/cosignments' }&quot;&gt;Cosignments&lt;/router-link&gt;
+      &lt;router-link v-if=&quot;!isAuthenticated&quot; to=&quot;/login&quot; class=&quot;nav-link&quot; :class=&quot;{ 'active': $route.path === '/login' }&quot;&gt;Login&lt;/router-link&gt;
+      &lt;router-link v-if=&quot;!isAuthenticated&quot; to=&quot;/register&quot; class=&quot;nav-link&quot; :class=&quot;{ 'active': $route.path === '/register' }&quot;&gt;Register&lt;/router-link&gt;
+      &lt;router-link v-if=&quot;isAuthenticated&quot; to=&quot;/profile&quot; class=&quot;nav-link&quot; :class=&quot;{ 'active': $route.path === '/profile' }&quot;&gt;Profile&lt;/router-link&gt;
+      &lt;button v-if=&quot;isAuthenticated&quot; @click=&quot;logout&quot; class=&quot;nav-link logout-button&quot;&gt;Logout&lt;/button&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+&lt;/template&gt;
+</code></pre>
+<ul>
+<li><strong>Description</strong>: Vue template for the navbar component. Displays the site logo, navigation links, and authentication-related buttons.</li>
+</ul>
+<h2 id="navbar-component-script">Navbar Component Script</h2>
+<pre><code class="language-html">&lt;script&gt;
+export default {
+  name: 'Navbar',
+  data() {
+    return {
+      isAuthenticated: false,
+    };
+  },
+  methods: {
+    isAuthPage() {
+      const authPages = ['/login', '/register'];
+      return authPages.includes(this.$route.path);
+    },
+    logout() {
+      // Clear authentication token from local storage
+      localStorage.removeItem('access_token');
+
+      // Update the isAuthenticated status
+      this.isAuthenticated = false;
+
+      // Redirect to the login page
+      this.$router.push('/login');
+    },
+  },
+  created() {
+    // Check if the user is already authenticated
+    this.isAuthenticated = localStorage.getItem('access_token') !== null;
+  },
+};
+&lt;/script&gt;
+</code></pre>
+<ul>
+<li><strong>Description</strong>: Vue script for the navbar component. Manages authentication status and provides methods for logging out.</li>
+</ul>
+<h2 id="navbar-component-styles">Navbar Component Styles</h2>
+<pre><code class="language-html">&lt;style scoped&gt;
+header {
+  background-color: #282828;
+  color: #dbd8d8;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  color: #dbd8d8;
+}
+
+nav {
+  display: flex;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #6c6c6c;
+  font-size: 1.2em;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 4px;
+  margin-left: 10px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.active {
+  text-decoration: underline;
+  color: #9c9c9c;
+}
+
+.logout-button {
+  background-color: #4d4d4d;
+  color: #767676;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 4px;
+  margin-left: 10px;
+  transition: color 0.3s;
+}
+
+.logout-button:hover {
+  color: #f8fa87;
+  text-decoration: underline;
+}
+&lt;/style&gt;
+</code></pre>
+<ul>
+<li><strong>Description</strong>: Vue styles for the navbar component. Defines the appearance of the header, logo, navigation links, and buttons.</li>
+</ul>
+<h2 id="homevue-is-up-next"><a href="../home/">Home.vue</a> is up next!</h2></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
