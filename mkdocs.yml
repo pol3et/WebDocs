@@ -3,12 +3,16 @@ site_name: Web-Labs
 nav:
   - Home: index.md
   - Lab 2:
+      - Practice:
+        - Overview: Lab2/prac2/overview.md
       - Overview: Lab2/overview.md
       - Models: Lab2/models.md
       - Views: Lab2/views.md
       - Urls: Lab2/urls.md
       - Forms: Lab2/forms.md
   - Lab 3:
+      - Practice:
+        - Overview: Lab3/prac3/overview.md
       - Overview: Lab3/overview.md
       - Models: Lab3/models.md
       - Serializers: Lab3/serializers.md
